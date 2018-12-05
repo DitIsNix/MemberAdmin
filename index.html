@@ -1,0 +1,81 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+<title>TTV Spaarne</title>
+</head>
+<body>
+<div class="container">
+<header>
+	<h1>Ledenadministratie TTV Spaarne</h1>
+</header>
+<nav>
+	<ul class="navbar">
+		<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Nieuwe leden</a>
+				<div class="dropdown-content">
+					<a href="new_member.php?table=members" target="form_frame">Regulier lid</a>
+					<a href="new_member.php?table=squash" target="form_frame">Squash</a>
+					<a href="new_member.php?table=friday" target="form_frame">Vrijdagochtend</a>
+				</div>
+		</li>
+		<li><a href="search.php" target="main_frame">Mutaties en zoeken</a></li>
+		<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Ledenlijsten</a>
+				<div class="dropdown-content">
+					<a href="list.php?show=all" target="main_frame">Volledige ledenlijst</a>
+					<a href="list.php?show=junior" target="main_frame">Ledenlijst jeugd</a>
+					<a href="list.php?show=senior" target="main_frame">Ledenlijst senioren</a>
+					<a href="list.php?show=friday" target="main_frame">Vrijdagochtend</a>
+					<a href="list.php?show=squash" target="main_frame">Squash</a>
+					<a href="list.php?show=exmembers" target="main_frame">Oud-leden</a>
+				</div>
+		</li>
+		<li><a href="list.php?show=board" target="main_frame">Bestuur</a></li>
+		<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Commissies</a>
+				<div class="dropdown-content">
+					<a href="jeugdcommissie.php" target="main_frame">Jeugdcommissie</a>
+					<a href="barcommissie.php" target="main_frame">Barcommissie</a>
+					<a href="jubileumcommissie.php" target="main_frame">Jubileumcommissie</a>
+					<a href="onderhoudscommissie.php" target="main_frame">Onderhoudscommissie</a>
+					<a href="pratcommissie.php" target="main_frame">PRAT-commissie</a>
+				</div>
+		</li>
+		<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Teams</a>
+				<div class="dropdown-content">
+					<a href="teams.php?team=j1" target="main_frame">Jeugd 1</a>
+					<a href="teams.php?team=j2" target="main_frame">Jeugd 2</a>
+					<a href="teams.php?team=s1" target="main_frame">Heren 1</a>
+					<a href="teams.php?team=s2" target="main_frame">Senioren 2</a>
+					<a href="teams.php?team=s3" target="main_frame">Senioren 3</a>
+				</div>
+		</li>
+		<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Mailinglijsten</a>
+				<div class="dropdown-content">
+					<a href="mailing_list.php?target=junior">Jeugdleden</a>
+					<a href="mailing_list.php?target=senior">Senioren</a>
+					<a href="mailing_list.php?target=friday">Vrijdagochtend</a>
+					<a href="mailing_list.php?target=squash">Squash</a>
+					<a href="mailing_list.php?target=exmembers">Oudleden</a>
+				</div>
+		</li>
+		<li class="logOut"><a href="logout.php?logout=true" target="main_frame">Uitloggen</a></li>
+	</ul>
+</nav>
+<section class="form">
+	<iframe src="new_member.php" name="form_frame"></iframe>
+</section>
+<section class="list">
+	<iframe src="welcome.php" name="main_frame"></iframe>
+</section>
+<footer>
+	&copy; 2017 - Marnix Bultman
+</footer>
+</div>
+</body>
+</html>
