@@ -1,0 +1,178 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+div.container {
+	border: 2px #2A3496;
+}
+header {
+	height: 10vh;
+	padding: 1px;
+	color: lightcyan;
+	background-color: #2A3496;
+	clear: left;
+	text-align: center;
+}
+footer {
+	height: 5vh;
+	padding: 1em;
+	color: lightcyan;
+	background-color: #1B2477;
+	clear: left;
+	text-align: center;
+}
+
+/*
+----- nav bar and related list elements -----
+*/
+nav {
+	height: 6vh;
+	width: 100%;
+	font-size: 20px;
+	color: lightcyan;
+	background-color: #1B2477;
+	text-align: right;
+	text-decoration: none;
+}
+ul.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #1B2477;
+}
+li.dropdown {
+	display: inline-block;
+}
+li {
+	float: left;
+}
+li.logOut {
+	float: right;
+}
+li::after {
+	float: right;
+}
+li a, .dropbtn {
+	display: inline-block;
+	color: lightcyan;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: #0A0E38;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #1B2477;
+	min-width: 160px;
+	z-index: 1;
+}
+.dropdown-content a {
+	color: lightcyan;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+	background-color: #0A0E38;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/*
+----- left and right sections -----
+*/
+
+section {
+	height: 75vh;
+}
+section.form {
+	padding: 5px;
+	float: left;
+	width: 400px;
+	margin: 0;
+	background-image: url("http://def.kondopoga.ru/uploads/posts/1295606419_jsh4705.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+section.list {
+	padding: 5px;
+	overflow: hidden;
+	background-image: url("https://d3mjm6zw6cr45s.cloudfront.net/2017/07/samsonov_07_07_17.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+iframe {
+	margin: 1px;
+	width: 100%;
+	height: 100%;
+	border: 2px;
+	background-color: rgb(255,255,255,0.8);
+}
+div.logOutBlock {
+	position: fixed;
+	top: 10vh;
+	right: 0;
+	border: 0px;
+	overflow: visible;
+}
+iframe.logOutBlock {
+	height: 6vh;
+	margin: 2px;
+	background-color: #1B2477;
+	margin-right: 5px;
+}
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+.error {
+	color: red;
+}
+#login {
+	margin: auto;
+	width: 30%;
+}
+table.search {
+	border: solid 2px #1B2477;
+}
+table.form {
+	border: 0px;
+	font-size: 16px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search_form {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;	
+}
+table.memberlist {
+	border: solid 2px #1B2477;
+	font-size: 14px;
+	width: 100%;
+}
+table.memberlist th {
+	background-color: #1B2477;
+	color: lightcyan;
+}
+table.memberlist td {
+	text-align: center;
+}
+table..memberlist tr{
+	background: lightgrey;
+}
+table..memberlist tr:hover {
+	background-color: lightcyan;
+}
+
